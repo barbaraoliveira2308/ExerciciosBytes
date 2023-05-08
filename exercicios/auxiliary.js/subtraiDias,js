@@ -1,0 +1,9 @@
+function subtraiDias(data, dias) {
+    // escreve aqui a função
+    const umDiaEmMilissegundos = 24 * 60 * 60 * 1000; // número de milissegundos em um dia
+  const dataEmMilissegundos = data.getTime(); // número de milissegundos desde 1º de janeiro de 1970 até a data informada
+  const novaDataEmMilissegundos = dataEmMilissegundos - dias * umDiaEmMilissegundos; // subtrai o número de milissegundos correspondente ao número de dias informado
+  const novaData = new Date(novaDataEmMilissegundos); // cria uma nova data a partir do número de milissegundos calculado
+  return novaData;
+
+}

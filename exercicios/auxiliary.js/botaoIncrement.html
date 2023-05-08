@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício</title>
+</head>
+<body>
+    <section class="contador">
+        <h2 id="valor">0</h2>
+        <button id="incrementar">Incrementar</button>
+        <button id="decrementar">Decrementar</button>
+    </section>
+<script>
+ function valor() {
+  let numero = document.getElementById('valor');
+  let valorAtual = 0;
+
+  document.getElementById('incrementar').addEventListener('click', function() {
+    valorAtual++;
+    numero.innerText = valorAtual;
+  });
+
+  document.getElementById('decrementar').addEventListener('click', function() {
+    valorAtual--;
+    numero.innerText = valorAtual;
+  });
+
+}
+valor();
+
+
+/*
+let numero = document.getElementById('valor');
+  let valorAtual = 0;
+
+  let botaoIncrementar = document.getElementById('incrementar')
+  let botaoDecrementar = document.getElementById('decrementar')
+
+
+  botaoIncrementar.addEventListener('click', incrementa);
+  botaoDecrementar.addEventListener('click', decrementa);
+
+  function incrementa() {
+      valorAtual++;
+    numero.innerText = valorAtual;
+  }
+
+  function decrementa(){
+    valorAtual--;
+    numero.innerText = valorAtual;
+  
+  }
+
+*/
+</script>
+</body>
+</html>
+
+
+
+
