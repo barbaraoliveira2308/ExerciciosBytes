@@ -49,3 +49,47 @@ function calculaSigno(dia, mes) {
     return "Peixes";
   }
 } 
+function calculaEstacaoDoAno(dia, mes) {
+  // escreve aqui a função
+  // Primavera - 21 de Março a 20 de Junho
+  // Verão - 21 de Junho a 20 de Setembro
+  // Outono - 21 de Setembro a 20 de Dezembro
+  // Inverno - 21 de Dezembro a 20 de Março
+  const mesesComTrinta = [4, 6, 9, 11];
+  console.log(dia, mes)
+  if (dia < 1 || dia > 31) {
+      return "Por favor introduza um dia entre 1 e 31."
+
+  }
+  if (mes < 1 || mes > 12) {
+      return "Por favor introduza um mês entre 1 e 12."
+
+  }
+  if (mesesComTrinta.includes(mes) && dia > 30)  {
+      
+      return "Por favor introduza um dia entre 1 e 30.";
+
+  }
+  if (mes == 2 && dia > 28) {
+      return "Por favor introduza um dia entre 1 e 28.";
+
+  }
+  if ((dia >= 21 && mes >= 3) || (dia <= 20 && mes <= 6)) {
+      console.log(1)
+      return "Primavera"
+  }
+  if ((dia >= 21 && mes >= 6) || (dia <= 20 && mes <= 9)) {
+      console.log(2)
+      return "Verão"
+
+  }
+  if ((dia >= 21 && mes >= 9) || mes ==  || (dia <= 20 && mes <= 12)) {
+      console.log(3)
+      return "Outono"
+
+  }
+  if ((dia >= 21 && mes >= 12) || mes == 1 || mes == 2  || (dia <= 20 && mes <= 3)) {
+      console.log(4)
+      return "Inverno"
+  }
+}

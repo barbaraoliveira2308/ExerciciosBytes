@@ -36,15 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-A = 2√3. a 
-function calculaAreaSuperficieOctaedro(aresta) {
-  let area = 2 * (Math.sqrt(3)) * (aresta ** 2);
-  let total = Math.round(area);
-
-  if(aresta < 0){
-      return "Por favor insira um valor positivo."
-  }
-
-  return total;
-}
