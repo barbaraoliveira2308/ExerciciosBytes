@@ -17,9 +17,8 @@ function numeroTrilingue(n, lingua) {//(n) representa a chave, lingua representa
 ]);
     console.log(numeros.get(n))// usa  o get para encontrar o valor da chave 
     
-    let indexLingua = ["pt","en","fr"].indexOf(lingua) // usa o index para encontrar um valor especifico dentro do array 
+    let indexLingua = ["pt","eng","fr"].indexOf(lingua) // usa o index para encontrar um valor especifico dentro do array 
 
     return numeros.get(n)[indexLingua]; 
 } 
 
-console.log(numeroTrilingue(7, 'pt'))

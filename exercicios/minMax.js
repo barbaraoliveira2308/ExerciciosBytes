@@ -15,3 +15,5 @@ for (let i =Math.min(valor1, valor2); i <= Math.max(valor1, valor2); i++){
 }
 return valores
 }
+
+

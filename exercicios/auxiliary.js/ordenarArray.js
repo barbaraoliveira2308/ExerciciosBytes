@@ -1,0 +1,11 @@
+function ordenaDoMenorAoMaior(array){
+    // escreve aqui a função
+
+
+  return array.sort((a, b)=> a - b)
+  
+
+
+}
+
+
